@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    
+    
+    background-color: white;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Navbar part */
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #DDC0F0;
+    border: 1px solid #d3c7d5;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.nav-links-container {
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #A261CB;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-links li a.active {
+    color: #26053b;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icons i {
+    color: #A261CB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-icons i:hover {
+    color: #6c3b96;
+    transition: color 0.3s ease;
+}
+/* ---------------------------------------------------------------------- */
+
+/* page start */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+    width: 80%;
+    margin: 35px auto 35px auto;
+    padding: 50px;
+    background-color: #DDC0F0;
+    border-radius: 142px;
+    overflow-y: auto;
+    min-height: calc(100vh - 470px);
+}
+
+.title {
+    margin-bottom: 5px;
+    grid-column: span 5;
+    margin-left: 400px;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: auto;
+    color: #4a2c6f;
+    grid-column: span 5;
+}
+
+/* .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+} */
+
+.brand-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.brand-card:hover {
+    transform: scale(1.03);
+}
+
+.brand-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.brand-card button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7d47b3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    /* cursor: pointer; */
+    font-size: 1em;
+    border-radius: 50 50 25px 25px;
+}
+
+.brand-card button:hover {
+    background-color: #5e3490;
+}
+
+/* page end */
+
+
+/* Footer start*/
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #DDC0F0;
+    color: #2D0D41;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    height: 326px;
+    width: 100%;
+}
+
+footer .column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.column .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.column .logo img {
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2D0D41;
+}
+
+.column p {
+    font-size: 14px;
+    color: #2D0D41;
+    margin-bottom: 10px;
+}
+
+.column .subscribe-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #2D0D41;
+    width: min-content;
+    border-radius: 4px;
+}
+
+.column .subscribe-box input {
+    padding: 10px;
+    border: 1px solid #ddc0f0;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 200px;
+    background-color: transparent;
+}
+
+.column .subscribe-box button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.column ul li a:hover {
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #26053b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a:hover {
+    background-color: #6c3b96;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    color: #2D0D41;
+    margin-top: 30px;
+    bottom: 10px;
+    width: 100%;
+    border-top: 1px solid;
+    padding-top: 27px;
+}
+
+/* Footer end*/
+
+  

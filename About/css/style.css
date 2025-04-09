@@ -1,0 +1,50 @@
+/* start about */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #DDC0F0;
+    padding: 50px;
+    border-radius: 142px;
+}
+
+.about-image img {
+    width: 500px;
+    height: 600px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-left: 20px;
+    color: #26053b;
+    flex: 1;
+}
+
+.about-text img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #6c3b96;
+    font-weight: bold;
+}
+
+.sub-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6c3b96;
+    margin-top: 10px;
+}
+
